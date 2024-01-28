@@ -10,20 +10,22 @@ var twoSum = function(nums, target) {
     }
 };
 
-
 console.log(twoSum([3,2,4], 6))
+console.log(twoSum([2,6,7,3,9,2], 10))
+console.log(twoSum([5,10,15,20], 35))
+
 
 
 // Better time complexity using Objects
 
-var twoSum = function (nums, target) {
-    const mp = {}
+// var twoSum = function (nums, target) {
+//     const mp = {}
  
-    for (let i = 0; i < nums.length; i++) {
-        const diff = target - nums[i]
+//     for (let i = 0; i < nums.length; i++) {
+//         const diff = target - nums[i]
     
-        if (diff in mp) return [i, mp[diff]]
+//         if (diff in mp) return [i, mp[diff]]
  
-        mp[nums[i]] = i
-    }
- }
+//         mp[nums[i]] = i
+//     }
+//  }
