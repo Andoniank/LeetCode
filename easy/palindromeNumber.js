@@ -1,5 +1,7 @@
 function palindromeNumber(num) {
-    
+    let reverse = num.toString().split("").reverse().join("")
+    let reverseNum = parseInt(reverse)
+    return reverseNum === num
 }
 
 console.log(palindromeNumber(3946))
