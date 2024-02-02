@@ -1,5 +1,9 @@
 const longestCommonPrefix = function(strs) {
-    
+    let result = ""
+
+    for (let i = 0; i < strs.length; i++) {
+        
+    }
 };
 
 console.log(longestCommonPrefix(["flower","flow","flight"]))
