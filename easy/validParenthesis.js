@@ -18,3 +18,6 @@ const isValid = function(s) {
     return count === 0;
 };
 
+console.log(isValid("()"))
+console.log(isValid("()[]{}"))
+console.log(isValid("(]"))
