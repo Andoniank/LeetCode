@@ -21,3 +21,5 @@ const isValid = function(s) {
 console.log(isValid("()"))
 console.log(isValid("()[]{}"))
 console.log(isValid("(]"))
+console.log(isValid("()-s8f(}P"))
+console.log(isValid("(])([sf()"))
