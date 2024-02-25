@@ -1,3 +1,6 @@
+//write a funciton that returns whether a string contains a valid parenthesis
+//valid parenthesis starts with "(" and ends with ")" and can have anything in between
+
 const isValid = function(s) {
     const array = [];
     let count = 0;

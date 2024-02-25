@@ -1,3 +1,6 @@
+//write a function that returns two numbers from an array of numbers that equal to the target
+//return their indexes in an array
+
 var twoSum = function(nums, target) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j <= nums.length; j++) {
