@@ -4,10 +4,10 @@
 const plusOne = function(digits) {
     let result = []
 
-    for (let i = digits.length; i >= 0; i--) {
-        if (i === digits.length && digits[i] !== 9) {
+    for (let i = digits.length - 1; i >= 0; i--) {
+        if (i === digits.length - 1 && digits[i] !== 9) {
             result.unshift(digits[i] + 1)
-        } else if (i === digits.length && digits[i] === 9) {
+        } else if (i === digits.length - 1 && digits[i] === 9) {
             result.unshift(0)
             result.unshift(1)
             i -= 1
