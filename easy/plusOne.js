@@ -2,7 +2,21 @@
 // and return the new array of integers 
 
 const plusOne = function(digits) {
+    let result = []
+
+    for (let i = digits.length; i >= 0; i--) {
+        if (i === digits.length && digits[i] !== 9) {
+            result.unshift(digits[i] + 1)
+        } else if (i === digits.length && digits[i] === 9) {
+            result.unshift(0)
+            result.unshift(1)
+            i -= 1
+        } else {
+            result.unshift(digits[i])
+        }
+    }
     
+    return result
 };
 
 console.log(plusOne([1,2,3]))    //expected: [1,2,4]
