@@ -3,7 +3,9 @@
 
 
 const isPalindrome = function(s) {
-    
+    const base = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+    const reverse = base.split("").reverse().join("")
+    return base === reverse
 };
 
 
