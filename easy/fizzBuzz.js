@@ -6,10 +6,23 @@
 // answer[i] == i (as a string) if none of the above conditions are true.
 
 const fizzBuzz = function(n) {
-    
+    let result = []
+
+    for (let i = 1; i <= n; i++) {
+        if ((i % 3 === 0) && (i % 5 === 0)) {         // ensure this if statement is first as to not push "fizz" or "buzz" on a number thats divisible by both
+            result.push("FizzBuzz")
+        } else if (i % 5 === 0) {
+            result.push("Buzz")
+        } else if (i % 3 === 0) {
+            result.push("Fizz")
+        } else {
+            result.push(i.toString())
+        }
+    }
+    return result
 }
 
 console.log(fizzBuzz(3))
 console.log(fizzBuzz(5))
 console.log(fizzBuzz(15))
-console.log(fizzBuzz(25))
+console.log(fizzBuzz(30))
