@@ -17,6 +17,7 @@ const containsNearbyDuplicate = function(nums, k) {
 
 // this solution passes these test cases but does not pass all the test cases on leetcode due to test cases with very
 // long num arrays as it exceeds the time limit. This is probably to prevent O(n)^2 solutions
+// need to revisit for better time complexity solution
 
 console.log(containsNearbyDuplicate([1,2,3,1], 3))       // true
 console.log(containsNearbyDuplicate([1,0,1,1], 1))       // true
