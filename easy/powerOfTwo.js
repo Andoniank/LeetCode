@@ -2,7 +2,13 @@
 // An integer n is a power of two, if there exists an integer x such that n == 2x.
 
 const isPowerOfTwo = function(n) {
+    let number = n
 
+    while (number > 1 && number % 2 === 0) {
+        number = number / 2
+    }
+
+    return number === 1
 }
 
 console.log(isPowerOfTwo(1))
